@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="l05.js"></script>
+    <script type="text/javascript" src="star_widget.js"></script>
+    <script>  $(function() {
+      $('#stargoeshere').append(starWidget(3, 
+        // called with number of stars selected
+        function(i) { console.log('Select ' + i); }));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="stars.css">
+  </head>
+  <body>
+    <div id="stargoeshere"></div>
+  </body>
+</html>
