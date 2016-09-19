@@ -1,0 +1,27 @@
+body {
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+/* See http://stackoverflow.com/questions/17217766/two-divs-side-by-side-fluid-display */
+section {
+  width: 100%;
+  max-width: 800px;
+}
+
+div#grades_by_assignment {
+  width: 40%;
+  float: left;
+}
+
+div#grades_by_student {
+  margin-left: 50%;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-top: 0px;
+}

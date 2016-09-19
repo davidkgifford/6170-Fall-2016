@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Gradebook</title>
+    <link type="text/css" rel="stylesheet" href="modules/gradebook.css">
+    <link type="text/css" rel="stylesheet" href="modules/gradewidget.css">
+  </head>
+</html>
+<body>
+  <h1>Gradebook</h1>
+  <section>
+    <div id="grades_by_assignment"></div>
+    <div id="grades_by_student"></div>
+  </section>
+
+  <script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script>
+
+  <script type="text/javascript" src="modules/gradebook.js"></script>
+  <!-- Depends on gradebook. -->
+  <script type="text/javascript" src="modules/gradewidget.js"></script>
+  <!-- Depends on gradebook and gradewidget. -->
+  <script type="text/javascript" src="modules/grademain.js"></script>
+</body>
+

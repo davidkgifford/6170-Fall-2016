@@ -1,0 +1,43 @@
+table.GradeWidget {
+  margin-left: 20px;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table.GradeWidget tr.avg {
+  border-top: 1px solid #000;
+  font-weight: bold;
+}
+
+table.GradeWidget td {
+  height: 20px;
+}
+
+/* First column. Better would be to have a class for each logical column, but
+this keeps gradewidget.js shorter for example purposes. */
+table.GradeWidget tr td:first-child {
+  width: 160px;
+  text-align: left;
+}
+
+/* Second column. See above. */
+table.GradeWidget tr td:first-child + td {
+  width: 40px;
+  text-align: right;
+  cursor: pointer;
+}
+
+/*table.GradeWidget tr td:first-child + td a {
+  text-decoration: none;
+}*/
+
+table.GradeWidget input[type=number]::-webkit-inner-spin-button,
+table.GradeWidget input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+table.GradeWidget input {
+  width: 25px;
+  text-align: right;
+}
